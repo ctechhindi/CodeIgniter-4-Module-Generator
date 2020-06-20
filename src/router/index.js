@@ -11,12 +11,29 @@ Vue.use(VueRouter)
     component: Home
   },
   {
+    path: '/modules',
+    name: 'Modules',
+    component: () => import('../views/Modules.vue')
+  },
+  {
+    path: '/module/fields/:module',
+    name: 'ModuleField',
+    component: () => import('../views/ModuleField.vue')
+  },
+  {
+    path: '/module/files/:module',
+    name: 'ModuleFiles',
+    component: () => import('../views/ModuleFiles.vue') // Generate Module File
+  },
+  {
+    path: '/module/settings/:module',
+    name: 'ModuleSettings',
+    component: () => import('../views/ModuleSettings.vue') // Module Global Settings
+  },
+  {
     path: '/about',
     name: 'About',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
+    component: () => import('../views/About.vue')
   }
 ]
 
