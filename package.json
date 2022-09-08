@@ -11,7 +11,7 @@
     "buefy": "^0.8.19",
     "core-js": "^3.6.4",
     "dexie": "^2.0.1",
-    "jszip": "^3.5.0",
+    "jszip": "^3.7.0",
     "lodash": "^4.17.15",
     "register-service-worker": "^1.7.1",
     "vue": "^2.6.11",
